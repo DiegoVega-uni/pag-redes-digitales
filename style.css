@@ -967,6 +967,15 @@ html {
   transform: scale(1);
 }
 
+.texto-autor p{
+  text-align: left;
+}
+
+.texto-autor{
+  margin-top: 8%;
+  margin-left: 35%;
+}
+
 @media (max-width: 1500px) {
   .about-us-img-wrapper {
     grid-row: 3 / -1;
