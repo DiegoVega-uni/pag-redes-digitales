@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="esp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab - Práctica 6</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Cerrar</span>
+      </div>
+      <header class="header">
+        <div class="img-wrapper">
+          <img src="images/prac6bg.jpg" />
+        </div>
+        <div class="banner">
+          <h1>Página PHP</h1>
+        </div>
+        <a href="index.html">
+          <div class="back-btn" id="backbtn">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </a>
+      </header>
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#intro" class="menu-link" data-content="Introducción">Introducción</a>
+          </li>
+          <li class="menu-item">
+            <a href="#objt" class="menu-link" data-content="Objetivos">Objetivos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#marco" class="menu-link" data-content="Marco Teórico">Marco</a>
+          </li>
+          <li class="menu-item">
+            <a href="#desa" class="menu-link" data-content="Desarrollo y Evidencias">Desarrollo</a>
+          </li>
+          <li class="menu-item">
+            <a href="#conc" class="menu-link" data-content="Conclusión">Conclusión</a>
+          </li>
+          <li class="menu-item">
+            <a href="#ref" class="menu-link" data-content="Referencias">Referencias</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="intro">Introducción</h2>
+          <div class="underline"></div>
+          <div class="intro">
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="objt">Objetivos</h2>
+          <div class="underline"></div>
+          <h3 class="objetivos">Objetivo General</h3>
+          <p>Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo Wifi ESP8266.</p>
+          <h3>Objetivos específicos</h3>
+          <ol>
+            <li>Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias: <a href="http://arduino.esp8266.com/stable/package_esp8266com_index.json">http://arduino.esp8266.com/stable/package_esp8266com_index.json</a></li>
+            <li>Desarrollar un programa de encendido de un LED mediante programación.</li>
+            <li>Desarrollar un programa de apagado de un LED mediante programación.</li>
+            <li>Desarrollar un programa de encendido y apagado de un LED mediante retardos.</li>
+            <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.</li>
+            <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.</li>
+            <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.</li>
+            <li>Utilizando el ejemplo de Thingspeak, desarrollar un sistema que mediante un botón conectado al NodeMCU enviemos un 1 al apretar el botón y un 0 al soltarlo.</li>
+          </ol>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header" >
+          <h2 class="section-heading" id="marco">Marco Teórico</h2>
+          <div class="underline"></div>
+        </div>
+      </section>
+      <section class="header-desa">
+        <div class="section-header">
+          <h2 class="section-heading" id="desa">Desarollo y Evidencias</h2>
+          <div class="underline"></div>
+          <div class="meto">
+            <p></p>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/5f5068cd-b501-4e6f-9444-bcebcf01c87d/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/03ffb138-e682-44b3-8688-2fdc9c5530e0/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/af7fa3b8-1b8c-4dd0-bb91-e7b86a87ab9b/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/a7bfc6d1-7105-4f1c-a56e-e1c9266afd1b/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/49919cea-ac8a-4d0c-914e-b4bc85b169b7/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/d0c3a6f3-0441-48bb-8a17-de0a7705bd9a/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="conc">Conclusión</h2>
+          <div class="underline"></div>
+          <p></p>
+          <p></p>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="ref">Referencias</h2>
+          <div class="underline"></div>
+          <ol>
+            <li>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</li>
+            <li>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology.</li>
+          </ol>
+        </div>
+      </section>
+      <a href="#">
+        <div class="scroll-btn" id ="scrollbtn">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+      </a>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2021, Diego Vega De Ita - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="tilt.js"></script>
+  </body>
+</html>
