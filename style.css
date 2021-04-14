@@ -256,6 +256,13 @@ html {
   overflow: hidden;
 }
 
+.header-p6{
+  width: 95%;
+  height: 112vh;
+  position: relative;
+  perspective: 100rem;
+}
+
 .img-wrapper {
   width: 100%;
   height: 100%;

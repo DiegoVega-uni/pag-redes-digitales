@@ -40,7 +40,7 @@
           <img src="images/prac5bg.jpg" />
         </div>
         <div class="banner">
-          <h1>Página PHP</h1>
+          <h1>Configuración Wifi ESP8266</h1>
         </div>
         <a href="index.html">
           <div class="back-btn" id="backbtn">
@@ -83,7 +83,9 @@
           <h2 class="section-heading" id="intro">Introducción</h2>
           <div class="underline"></div>
           <div class="intro">
-            <!-- Introducción (p) -->
+            <p>El ESP8266 es un chip altamente integrado diseñado para las necesidades de un nuevo mundo conectado. Ofrece una 
+              solución completa y autónoma de redes Wi-Fi, lo que le permite alojar la aplicación o servir como puente entre 
+              Internet y un microcontrolador.</p>
           </div>
         </div>
       </section>
@@ -95,9 +97,13 @@
           <p>Conocer, identificar y comprobar el funcionamiento del módulo Wifi ESP8266.</p>
           <h3>Objetivos específicos</h3>
           <ol>
-            <li>Utilizando la información e instrucciones de la presentación, configurar el módulo wifi ESP8266 para utilizarlo mediante comandos AT, 9600 Baudios y conectado a alguna red Wifi.</li>
-            <li>Utilizando el ejemplo de Thingspeak de la diapositiva, enviar un dato a la plataforma de Thingspeak y corroborarlo en el explorador web.</li>
-            <li>Utilizando la información e instrucciones de la presentación, configurar el módulo wifi ESP8266 para utilizarlo mediante comandos AT, Configurar un nuevo tablero de Thingspeak y enviar un dato mediante comandos en el monitor serial.</li>
+            <li>Utilizando la información e instrucciones de la presentación, configurar el módulo wifi ESP8266 para utilizarlo 
+              mediante comandos AT, 9600 Baudios y conectado a alguna red Wifi.</li>
+            <li>Utilizando el ejemplo de Thingspeak de la diapositiva, enviar un dato a la plataforma de Thingspeak y corroborarlo 
+              en el explorador web.</li>
+            <li>Utilizando la información e instrucciones de la presentación, configurar el módulo wifi ESP8266 para utilizarlo 
+              mediante comandos AT, Configurar un nuevo tablero de Thingspeak y enviar un dato mediante comandos en el monitor 
+              serial.</li>
           </ol>
         </div>
       </section>
@@ -105,7 +111,10 @@
         <div class="section-header" >
           <h2 class="section-heading" id="marco">Marco Teórico</h2>
           <div class="underline"></div>
-          <!--Marco teórico (p)-->
+          <p>El ESP8266 es un chip Wi-Fi de bajo coste con pila TCP/IP completa y capacidad de MCU (Micro Controller Unit) 
+            producida por el fabricante chino Espressif Systems, con sede en Shanghai. El chip primero llegó a la atención de los 
+            fabricantes occidentales en agosto de 2014 con el módulo ESP-01. El ESP8266 tiene potentes capacidades a bordo de 
+            procesamiento y almacenamiento que le permiten integrarse con sensores y dispositivos específicos de aplicación a través de sus GPIOs con un desarrollo mínimo y carga mínima durante el tiempo de ejecución. Su alto grado de integración en el chip permite una circuitería externa mínima, y la totalidad de la solución, incluyendo el módulo está diseñado para ocupar el área mínima en un PCB.</p>
         </div>
       </section>
       <section class="header-desa">
@@ -113,7 +122,37 @@
           <h2 class="section-heading" id="desa">Desarollo y Evidencias</h2>
           <div class="underline"></div>
           <div class="meto">
-            <p></p>
+            <p>Para la resolución del primer objetivo se siguieron los pasos mostrados en la presentación para cargar el archivo en el NodeMCU que funcionará de firmware. El primer paso fue activar el modo flash en el dispositivo presionando los b"otones de "flash" y "reset" en el orden debido, posterior a esto, con el software proporcionado (ESP8266 Flasher Downloader) se cargó el firmware que proporcionó el profesor</p>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/prac5_1.PNG" alt="Firmware utilizado" data-original="prac5_4.PNG">
+              </div>
+              <div class="img">
+                <img src="images/prac5_3.PNG" alt="Carga del firmware al dispositivo" data-original="prac5_3.PNG">
+              </div>
+              <div class="img">
+                <img src="images/prac5_4.PNG" alt="Muestra de estado redy desde Monitor serie de Arduino IDE" data-original="prac5_4.PNG">
+              </div>
+            </div>
+            <p>Posteriormente, se realizó el cambio a modo cliente, se buscaron las redes y se conectó a la red DDSO_CMT2.4G, usando esta conexión wifi se envió un 45 tanto en la demostración de clase como al tablero de thingspeak creado por mi. Conexión a wifi con comando AT+CWJAP. Evío de datos con comando AT+CIPSEND. Las llaves usadas para el envío de datos a los tableros son (MK3VVOESS12CSHG9&field1) para el tablero del profesor y (E7P40XW5BZ60YCIA) para el tablero personal </p>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/prac5_5.PNG" alt="Modo cliente y redes disponibles" data-original="prac5_5.PNG">
+              </div>
+              <div class="img">
+                <img src="images/prac5_7.PNG" alt="Conexión a wifi y envío de datos" data-original="prac5_7.PNG">
+              </div>
+              <div class="img">
+                <img src="images/prac5_8.png" alt="Datos recibidos en el tablero del profesor" data-original="prac5_8.png">
+              </div>
+              <div class="img">
+                <img src="images/prac5_9.png" alt="Datos recibidos en el tablero personal" data-original="prac5_9.png">
+              </div>
+            </div>
+            <div class="modal">
+              <img src="" alt="" class="fullsimg">
+              <p class="caption"></p>
+            </div>
           </div>
         </div>
       </section>
@@ -121,8 +160,8 @@
         <div class="section-header">
           <h2 class="section-heading" id="conc">Conclusión</h2>
           <div class="underline"></div>
-          <p></p>
-          <p></p>
+          <p>Se logró configurar el ESP8266 para el envío de datos mediante internet usando comandos AT, además, en el caso particular, fue necesaria la herramienta esptool para flashear el dispositivo</p>
+          <p>Se logró la creación de un tablero en la plataforma Thingspeak y la comunicación del ESP8266 con este tablero creado</p>
         </div>
       </section>
       <section class="header">
@@ -130,8 +169,8 @@
           <h2 class="section-heading" id="ref">Referencias</h2>
           <div class="underline"></div>
           <ol>
-            <li>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</li>
-            <li>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology.</li>
+            <li>MathWorks (2021). ThingSpeak Documentation. © 1994-2021 The MathWorks, Inc. </li>
+            <li>ESPRESIF (2021). ESP8266. @2021 ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.</li>
           </ol>
         </div>
       </section>
