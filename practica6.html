@@ -156,6 +156,19 @@
             </div>
             <p>En el último código, se realizó el envío de un dato usando internet a la plataforma ThingSpeak, funciona con una latencia de 5 segundos para evitar sobrecargar el sistema de Thingspeak y el NodeMCU. Se envía el dato 0 si el botón no está presionado y el dato 100 si está presionado.</p>
             <iframe src=https://create.arduino.cc/editor/diegovegadeita/b9136010-7299-42ce-9c27-62809ce133a1/preview?embed style="height:1300px;width:60%;margin:20px;float:right;" frameborder=0></iframe>
+            <p>Para este código hubo bastantes añadidos respecto a los anteriores, las librerías empleadas son las tres primeras lineas de código, todas están comentadas dentro del recuadro de la derecha. La librería ESP8266WiFi.h permite la conexion del NodeMCU a la red Wifi Local que se desee. La librería WiFiClient.h  permite configurar el NodeMCU en modo cliente. La librería ESP8266HTTPClient.h cotiene las funciones de envío de request tipo POST y GET cuando el NodeMCU está en modo cliente.</p>
+            <p>En la función setup se establece el pin S3 como entrada, se habilita elserial y se usa la función conecta wifi.</p>
+            <p>La función conectawifi imprime en el monitor serial el estado de la conexión wifi, imprime puntos mientras conecta la red y la información de la red una vez que se conecte de forma satisfactoria a la red deseada.</p>
+            <p>La función enviar dato contstruye el dato para enviarlo desde un request a la aplicación de thingspeak con las credenciales mencionadas en el código previamente, si el wifi no está conectado al dispositivo entonces imprime un texto en el monitor serial</p>
+            <p>En el loop se valida si el botón está presionado, si está presionado se usa la función enviar dato para enviar un "100"; si no lo está, se envía un 0</p>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/prac6_5.png" alt="Monitor serie" data-original="prac6_5.png">
+              </div>
+              <div class="img">
+                <img src="images/prac6_6.png" alt="Recibimiento de varias instancias en tablero personal" data-original="prac6_6.png">
+              </div>
+            </div>
             <div class="modal">
               <img src="" alt="" class="fullsimg">
               <p class="caption"></p>
