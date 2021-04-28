@@ -1,0 +1,13 @@
+*{
+    text-indent: 20px;
+    letter-spacing: 3px;
+}
+
+.intro{
+    background-color: lightgrey;
+}
+
+.sensores-table{
+    width:50%;
+    font-size:larger;
+}
