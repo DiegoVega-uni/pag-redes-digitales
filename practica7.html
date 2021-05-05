@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="esp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab - Práctica 7</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Cerrar</span>
+      </div>
+      <header class="header">
+        <div class="img-wrapper">
+          <img src="images/prac6bg.jpg" />
+        </div>
+        <div class="banner">
+          <h1>Wifi ESP8266 request hacia una página PHP</h1>
+        </div>
+        <a href="index.html">
+          <div class="back-btn" id="backbtn">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </a>
+      </header>
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#intro" class="menu-link" data-content="Introducción">Introducción</a>
+          </li>
+          <li class="menu-item">
+            <a href="#objt" class="menu-link" data-content="Objetivos">Objetivos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#marco" class="menu-link" data-content="Marco Teórico">Marco</a>
+          </li>
+          <li class="menu-item">
+            <a href="#desa" class="menu-link" data-content="Desarrollo y Evidencias">Desarrollo</a>
+          </li>
+          <li class="menu-item">
+            <a href="#conc" class="menu-link" data-content="Conclusión">Conclusión</a>
+          </li>
+          <li class="menu-item">
+            <a href="#ref" class="menu-link" data-content="Referencias">Referencias</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="intro">Introducción</h2>
+          <div class="underline"></div>
+          <div class="intro">
+            <p>HTTP es un protocolo basado en el principio de cliente-servidor: las peticiones son enviadas por una entidad: el agente del usuario (o un proxy a petición de uno). La mayoría de las veces el agente del usuario (cliente) es un navegador Web, pero podría ser cualquier otro programa, como por ejemplo un programa-robot, que explore la Web, para adquirir datos de su estructura y contenido para uso de un buscador de Internet.</p>
+            <p>HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs.</p>
+          </div>
+        </div>
+      </section>
+      <section class="header-p6">
+        <div class="section-header">
+          <h2 class="section-heading" id="objt">Objetivos</h2>
+          <div class="underline"></div>
+          <h3 class="objetivos">Objetivo General</h3>
+          <p>Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo Wifi ESP8266.</p>
+          <h3>Objetivos específicos</h3>
+          <ol>
+            <li>Utilizando el ejemplo de Thingspeak, desarrollar un sistema que mediante un botón conectado al NodeMCU enviemos un 1 al apretar el botón y un 0 al soltarlo.</li>
+          </ol>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header" >
+          <h2 class="section-heading" id="marco">Marco Teórico</h2>
+          <div class="underline"></div>
+          <p>El ESP8266 es un chip Wi-Fi de bajo coste con pila TCP/IP completa y capacidad de MCU (Micro Controller Unit) 
+            producida por el fabricante chino Espressif Systems, con sede en Shanghai. El chip primero llegó a la atención de los 
+            fabricantes occidentales en agosto de 2014 con el módulo ESP-01. El ESP8266 tiene potentes capacidades a bordo de 
+            procesamiento y almacenamiento que le permiten integrarse con sensores y dispositivos específicos de aplicación a través 
+            de sus GPIOs con un desarrollo mínimo y carga mínima durante el tiempo de ejecución. Su alto grado de integración en el 
+            chip permite una circuitería externa mínima, y la totalidad de la solución, incluyendo el módulo está diseñado para 
+            ocupar el área mínima en un PCB.</p>
+            <p><b>GET: </b>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</p>
+            <p><b>POST: </b>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</p>
+        </div>
+      </section>
+      <section class="header-desa">
+        <div class="section-header">
+          <h2 class="section-heading" id="desa">Desarollo y Evidencias</h2>
+          <div class="underline"></div>
+          <div class="meto">
+            <p>Se realizó el envío de la lectura de los sensores usando internet a la página php creada en la práctica 4, funciona con una latencia de 5 segundos para evitar sobrecargar el sistema de dentro de 000webhost y el NodeMCU. Se envía el dato 0 desde cada sensor si el botón no está presionado y el dato 1 si está presionado.</p>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/1ea563aa-1465-4988-a8f0-02822d514f03/preview?embed style="height:1300px;width:60%;margin:20px;float:right;" frameborder=0></iframe>
+            <p>Las librerías empleadas son las tres primeras lineas de código, todas están comentadas dentro del recuadro de la derecha. La librería ESP8266WiFi.h permite la conexion del NodeMCU a la red Wifi Local que se desee. La librería WiFiClient.h  permite configurar el NodeMCU en modo cliente. La librería ESP8266HTTPClient.h cotiene las funciones de envío de request tipo POST y GET cuando el NodeMCU está en modo cliente.</p>
+            <p>En la función setup se establecen los GPIO del NodeMCU como entrada, en los comentrios del código se especifican, se habilita el serial y se usa la función conecta wifi.</p>
+            <p>La función conectawifi imprime en el monitor serial el estado de la conexión wifi, imprime puntos mientras conecta la red y la información de la red una vez que se conecte de forma satisfactoria a la red deseada.</p>
+            <p>La función enviar dato contstruye el dato para enviarlo desde un request de tipo GET a la aplicación de thingspeak con las credenciales mencionadas en el código previamente, si el wifi no está conectado al dispositivo entonces imprime un texto en el monitor serial</p>
+            <p>En el loop se valida si el botón está presionado, si está presionado se usa la función enviar dato para enviar un "1"; si no lo está, se envía un 0, en cada sensor se tiene un botón por lo que envía ceros y unos según los botónes presionados.</p>
+            <p>Para ver la página PHP puede ingresar al siguiente link: <a href="http://diegovega.000webhostapp.com/php/">http://diegovega.000webhostapp.com/php/</a></p>
+            <br>
+            <p>El esquema de la conexión de los botónes se muestra en el siguiente frame. Los colores de los cables que no conectan a algo van a ciertos pines del NodeMCU con el siguiente código: naranja-GPIO4, blanco-GPIO15, verde-GPIO14 y morado-GPIO5</p>
+            <iframe width="725" height="453" src="https://www.tinkercad.com/embed/jBrNkTNZtAz?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/prac7_1.png" alt="Incidencia de los sensores en la página PHP" data-original="prac7_1.png">
+              </div>
+              <div class="img">
+                <img src="images/prac7_2.png" alt="Incidencia de los sensores en la página PHP" data-original="prac7_2.png">
+              </div>
+              <div class="img">
+                <img src="images/prac7_3.jpg" alt="Circuito armado de forma física" data-original="prac7_3.jpg">
+              </div>
+            </div>
+            <div class="modal">
+              <img src="" alt="" class="fullsimg">
+              <p class="caption"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="conc">Conclusión</h2>
+          <div class="underline"></div>
+          <p>El ejercicio hace una conexión con la página PHP realizada para la lectura de cuatro sensores con datos enviados desde unos botones mediante el método GET</p>
+          <p>Se logró la conexión del NodeMCU a una red wifi por la que hizo viajar el dato a través de internet hacia la página PHP</p>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="ref">Referencias</h2>
+          <div class="underline"></div>
+          <ol>
+            <li>MathWorks (2021). ThingSpeak Documentation. © 1994-2021 The MathWorks, Inc. </li>
+            <li>ESPRESIF (2021). ESP8266. @2021 ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.</li>
+          </ol>
+        </div>
+      </section>
+      <a href="#">
+        <div class="scroll-btn" id ="scrollbtn">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+      </a>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2021, Diego Vega De Ita - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="tilt.js"></script>
+  </body>
+</html>
