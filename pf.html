@@ -83,7 +83,12 @@
           <h2 class="section-heading" id="intro">Introducción</h2>
           <div class="underline"></div>
           <div class="intro">
-            <p></p>
+            <p>El proyecto final de la materia consiste en realizar la codificación de un dashboard capaz de leer sensores enviados 
+              desde un dispositivo NodeMCU además de validar el ingreso mediante un login para poder visualizar el dashboard. Esto 
+              permite juntar los conocimientos adquiridos en la materia de Redes Digitales de datos y en su laboratorio. Se usaron 
+              tecnologías como HTML5, CSS3, JS, PHP y C para realizar los códigos necesarios en la creación de la página web tanto como 
+              del programa para hacer la lectura de los sensores mediante el dispositivo ESP8266.</p>
+              <a href="https://ferbreton.000webhostapp.com/tablero/">124</a>
           </div>
         </div>
       </section>
@@ -102,11 +107,26 @@
           </ol>
         </div>
       </section>
-      <section class="header">
+      <section class="header-">
         <div class="section-header" >
           <h2 class="section-heading" id="marco">Marco Teórico</h2>
           <div class="underline"></div>
-          <p></p>
+          <p>PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.​ Fue creado 
+            inicialmente por el programador danés-canadiense Rasmus Lerdorf en 1994.​ En la actualidad, la implementación de 
+            referencia de PHP es producida por The PHP Group</p>
+          <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a 
+            objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+          <p>C es un lenguaje de programación de propósito general​ originalmente desarrollado por Dennis Ritchie entre 1969 y 1972 
+            en los Laboratorios Bell, ​ como evolución del anterior lenguaje B, a su vez basado en BCPL.​​​Al igual que B, es un 
+            lenguaje orientado a la implementación de sistemas operativos, concretamente Unix.</p>
+          <p>HTML 5 es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes 
+            de sintaxis para HTML: una «clásica», HTML, conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 
+            que deberá servirse con sintaxis XML.​​</p>
+          <p>CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de 
+            un documento estructurado escrito en un lenguaje de marcado.​</p>
+          <p>NodeMCU es una plataforma IoT de código abierto.​​ Incluye el firmware que se ejecuta en el SoC Wi-Fi ESP8266 de 
+            Espressif Systems y el hardware que se basa en el módulo ESP-12.​​ El término "NodeMCU" se refiere al firmware en lugar de 
+            a los kits de desarrollo. El firmware utiliza el lenguaje Lua.</p>
         </div>
       </section>
       <section class="header-desa">
@@ -114,7 +134,66 @@
           <h2 class="section-heading" id="desa">Desarollo y Evidencias</h2>
           <div class="underline"></div>
           <div class="meto">
-            <p></p>
+            <p>En la realización del proyecto se crearon dos interfaces gráficas, una para el registro del usuario y otra para la 
+              visualización del dashboard y el key requerido para el envío de datos simulando el funcionamiento del tablero visto 
+              en la plataforma ThingSpeak. Partimos de la realización del login para el acceso al dashboard como se muestra en la 
+              imagen siguiente. Este login está disponible en el siguiente link: 
+              <a href="https://ferbreton.000webhostapp.com/proyecto.html">Log in</a> </p>
+            <p>Una vez creado el login se realizó el dashboard apoyados de bootstrap y jquery que permiten el desarrollo frontend 
+              con más agilidad y con mejor desempeño. Este dashboard está disponible en el siguiente link:
+              <a href="https://ferbreton.000webhostapp.com/tablero/">dashboard</a></p>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/pf_1.png" alt="Interfaz del login" data-original="pf_1.png">
+              </div>
+              <div class="img">
+                <img src="images/pf_2.png" alt="Interfaz del dashboard" data-original="pf_2.png">
+              </div>
+            </div>
+            <p>El esquematico guía de la conexión de los botónes se muestra en el siguiente frame. Los colores de los cables que no conectan a algo van a ciertos pines del NodeMCU con el siguiente código: naranja-GPIO4, blanco-GPIO15, verde-GPIO14 y morado-GPIO5</p>
+            <iframe width="725" height="453" src="https://www.tinkercad.com/embed/jBrNkTNZtAz?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            <p>El código usado es muy similar al de la práctica 7, con algunos ajustes para poder enviar los datos con un key como atributo extra</p>
+            <iframe src=https://create.arduino.cc/editor/diegovegadeita/1d323be7-2ade-4a86-8c90-a95a6daf4a52/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+            <h2 class="section-heading">Pruebas de Fernanda</h2>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/fer_1.png" alt="Ver datos en dashboard" data-original="fer_1.png">
+              </div>
+              <div class="img">
+                <img src="images/fer_2.png" alt="Armado del ciruito" data-original="fer_2.png">
+              </div>
+              <div class="img">
+                <img src="images/fer_4.png" alt="Armado del ciruito" data-original="fer_4.png">
+              </div>
+            </div>
+            <h2 class="section-heading">Pruebas de Stephano</h2>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/steph_1.jpg" alt="Ver datos en dashboard" data-original="steph_1.jpg">
+              </div>
+              <div class="img">
+                <img src="images/steph_2.jpg" alt="Armado del ciruito" data-original="steph_2.jpg">
+              </div>
+              <div class="img">
+                <img src="images/steph_3.jpg" alt="Ver datos en dashboard" data-original="steph_3.jpg">
+              </div>
+              <div class="img">
+                <img src="images/steph_4.jpg" alt="Armado del ciruito" data-original="steph_4.jpg">
+              </div>
+            </div>
+            <h2 class="section-heading">Pruebas de Diego</h2>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/diego_1.png" alt="Ver datos en dashboard" data-original="diego_1.png">
+              </div>
+              <div class="img">
+                <img src="images/prac7_3.jpg" alt="Armado del ciruito" data-original="prac7_3.jpg">
+              </div>
+            </div>
+            <div class="modal">
+              <img src="" alt="" class="fullsimg">
+              <p class="caption"></p>
+            </div>
           </div>
         </div>
       </section>
@@ -122,16 +201,19 @@
         <div class="section-header">
           <h2 class="section-heading" id="conc">Conclusión</h2>
           <div class="underline"></div>
-          <p></p>
+          <p>Se logró completar la implementación del dashboard y el login con cierto nivel de diseño.</p>
+          <p>Se logró enviar el dato por medio de los NodeMCU hacia el dashboard desde tres redes wifi distintas</p>
         </div>
       </section>
       <section class="header">
         <div class="section-header">
-          <h2 class="section-heading" id="ref">Referencias</h2>
+          <h2 class="section-heading" id="aut">Autores</h2>
           <div class="underline"></div>
           <ol>
-            <li>MathWorks (2021). ThingSpeak Documentation. © 1994-2021 The MathWorks, Inc. </li>
-            <li>ESPRESIF (2021). ESP8266. @2021 ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.</li>
+            <li>Ma. Fernanda Bretón Quintero</li>
+            <li>L. Abraham Melendez Hernández</li>
+            <li>G. Stephano Lugo Matchain</li>
+            <li>Diego Vega De Ita</li>
           </ol>
         </div>
       </section>
